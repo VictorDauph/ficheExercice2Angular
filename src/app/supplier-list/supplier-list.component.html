@@ -1,0 +1,11 @@
+<h2 appChangerCouleur>{{message}}</h2>
+
+<p *ngIf="suppliers.length<=0">Liste de fournisseurs vides</p>
+<ul>
+    <!--
+    <li [class.verified]="supplier.getIsVerfied()" >
+        {{ supplier.id }} - {{ supplier.name }} - {{ supplier.company }} - {{ supplier.phone }}
+    </li>
+    -->
+    <app-supplier-card appChangerCouleur *ngFor="let supplier of suppliers" [supplier]="supplier"></app-supplier-card>
+</ul>

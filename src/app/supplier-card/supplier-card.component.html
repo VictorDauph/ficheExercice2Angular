@@ -1,0 +1,5 @@
+<li [class.verified]="supplier.getIsVerfied()">
+    {{ supplier.id }} - {{ supplier.name }} - {{ supplier.company }} - {{ supplier.phone }}
+
+    <button (click)="toggleIsVerified()">changer état</button>
+</li>
